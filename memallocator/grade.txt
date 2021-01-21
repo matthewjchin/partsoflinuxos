@@ -1,0 +1,32 @@
+git submodule update --init --remote
+Submodule 'tests' (https://github.com/usf-cs326-sp19/P3-Tests.git) registered for path 'tests'
+Cloning into '/home/mmalensek/classroom-utils/working-dir/P3-sigsegv-factory/tests'...
+Submodule path 'tests': checked out '0d2a1fc25b580297d7a976ccc5169205a6dc70b3'
+./tests/run_tests 
+Building test programs
+make[1]: Entering directory '/home/mmalensek/classroom-utils/working-dir/P3-sigsegv-factory/tests/progs'
+cc -Wall -g -pthread -Wno-unused-variable  allocations-1.c -o allocations-1
+cc -Wall -g -pthread -Wno-unused-variable  allocations-2.c -o allocations-2
+cc -Wall -g -pthread -Wno-unused-variable  allocations-3.c -o allocations-3
+cc -Wall -g -pthread -Wno-unused-variable    free.c   -o free
+cc -Wall -g -pthread -Wno-unused-variable    print-test.c   -o print-test
+cc -Wall -g -pthread -Wno-unused-variable    scribble.c   -o scribble
+cc -Wall -g -pthread -Wno-unused-variable    thread-safety.c   -o thread-safety
+cc -Wall -g -pthread -Wno-unused-variable    write-test.c   -o write-test
+make[1]: Leaving directory '/home/mmalensek/classroom-utils/working-dir/P3-sigsegv-factory/tests/progs'
+Running Tests:
+ * 01 ls                   [1 pts]  [ FAIL ]
+ * 02 Free                 [1 pts]  [ FAIL ]
+ * 03 Basic First Fit      [1 pts]  [  OK  ]
+ * 04 Basic Best Fit       [1 pts]  [  OK  ]
+ * 05 Basic Worst Fit      [1 pts]  [  OK  ]
+ * 06 First Fit            [1 pts]  [ FAIL ]
+ * 07 Best Fit             [1 pts]  [ FAIL ]
+ * 08 Worst Fit            [1 pts]  [ FAIL ]
+ * 09 Scribbling           [1 pts]  [ FAIL ]
+ * 10 Thread Safety        [1 pts]  [ FAIL ]
+ * 11 print_memory()       [1 pts]  [  OK  ]
+ * 12 write_memory()       [1 pts]  [  OK  ]
+ * 13 Thanks for Trying    [1 pts]  [  OK  ]
+ * 14 Unix Utilities       [1 pts]  [ FAIL ]
+Execution complete. [6/14 pts] (42.9%)
